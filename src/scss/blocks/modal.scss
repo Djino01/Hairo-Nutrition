@@ -38,6 +38,9 @@
 		gap: 90px;
 		padding: 0px 92px 55px;
 	}
+	&__logo {
+		display: block;
+	}
 	&__container {
 		font-family: "Public Sans", sans-serif;
 		display: flex;
@@ -66,6 +69,11 @@
 				a {
 					color: #000;
 					text-decoration: underline;
+					transition: opacity 0.3s;
+					&:hover {
+						opacity: 0.6;
+						transition: opacity 0.3s;
+					}
 				}
 			}
 		}

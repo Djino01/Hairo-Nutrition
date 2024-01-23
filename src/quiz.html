@@ -51,13 +51,13 @@ color: 'header--light'
 												<div class="radio__caption">Male</div>
 											</label>
 											<label class="radio">
-												<input type="radio" name="gender" value="active" checked>
+												<input type="radio" name="gender" value="active">
 												<div class="radio__icon"></div>
 												<div class="radio__caption">Female</div>
 											</label>
 										</div>
 										<div class="quiz__bottom">
-											<button class="quiz__btn step--js btn-item" data-next-step="2">
+											<button class="quiz__btn step--js btn-item" disabled data-next-step="2">
 												<span>next</span>
 											</button>
 										</div>
@@ -83,7 +83,7 @@ color: 'header--light'
 												data-next-step="1">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="3">
+											<button class="quiz__btn step--js btn-item" disabled data-next-step="3">
 												<span>next</span>
 											</button>
 										</div>
@@ -113,7 +113,7 @@ color: 'header--light'
 												data-next-step="2">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="4">
+											<button class="quiz__btn step--js btn-item" disabled data-next-step="4">
 												<span>next</span>
 											</button>
 										</div>
@@ -153,7 +153,7 @@ color: 'header--light'
 												data-next-step="3">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="5">
+											<button class="quiz__btn step--js btn-item" disabled data-next-step="5">
 												<span>next</span>
 											</button>
 										</div>
@@ -197,7 +197,7 @@ color: 'header--light'
 												data-next-step="4">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="6">
+											<button class="quiz__btn step--js btn-item" disabled data-next-step="6">
 												<span>next</span>
 											</button>
 										</div>
@@ -238,7 +238,7 @@ color: 'header--light'
 												data-next-step="5">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="7">
+											<button class="quiz__btn step--js btn-item" disabled data-next-step="7">
 												<span>next</span>
 											</button>
 										</div>
@@ -279,7 +279,7 @@ color: 'header--light'
 												data-next-step="6">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="8">
+											<button class="quiz__btn step--js btn-item" disabled data-next-step="8">
 												<span>next</span>
 											</button>
 										</div>
@@ -380,7 +380,7 @@ color: 'header--light'
 												data-next-step="7">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="9">
+											<button class="quiz__btn step--js btn-item" disabled data-next-step="9">
 												<span>next</span>
 											</button>
 										</div>
@@ -485,7 +485,7 @@ color: 'header--light'
 												data-next-step="8">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="10">
+											<button class="quiz__btn step--js btn-item" disabled data-next-step="10">
 												<span>next</span>
 											</button>
 										</div>
@@ -572,7 +572,7 @@ color: 'header--light'
 												data-next-step="9">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="11">
+											<button class="quiz__btn step--js btn-item" disabled data-next-step="11">
 												<span>Fınısh quız</span>
 											</button>
 										</div>
@@ -590,6 +590,8 @@ color: 'header--light'
 	</section>
 
 </main>
+
+@@include('inc/modal.html')
 
 @@include('inc/page-footer.html')
 
