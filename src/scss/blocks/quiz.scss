@@ -68,6 +68,9 @@
 		visibility: hidden;
 		transform: translateY(15px);
 		transition: all 0s;
+		&-body {
+			position: relative;
+		}
 		&.active {
 			position: relative;
 			opacity: 1;
@@ -75,12 +78,25 @@
 			transform: translateY(0px);
 			transition: all 0.3s;
 		}
+		&.error {
+			.quiz {
+				&__error {
+					display: block;
+				}
+			}
+		}
 	}
 	&__bottom {
 		padding: 30px;
 		display: flex;
 		justify-content: center;
 		gap: 32px;
+	}
+	&__error {
+		color: #a1203e;
+		position: relative;
+		padding: 20px 30px 0px;
+		display: none;
 	}
 }
 @media (max-width: 1290px) {
@@ -141,6 +157,9 @@
 			padding: 19px 19px 26px;
 			flex-direction: column-reverse;
 			gap: 20px;
+		}
+		&__error {
+			padding: 10px 20px 0px;
 		}
 		.title {
 			font-size: 22px;

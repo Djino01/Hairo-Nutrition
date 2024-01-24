@@ -7,15 +7,88 @@ $('.page-quiz__btn').on("click", function () {
 if ($(".step--js").length > 0) {
     $('.step--js').on("click", function (e) {
         e.preventDefault();
+
         var step = $(this).data("next-step");
-        $(".quiz__step").removeClass("active");
-        $(this).parent().parent().parent().find('.quiz__step[data-step="' + step + '"]').addClass("active");
-        
+        var $activeStep = $(this).closest('.quiz__step');
+
+        // Выводим в консоль элементы внутри активного шага
+        $activeStep.find('.radio, .quiz__label, .checkbox').each(function(index, element) {
+            console.log($(element).html());
+        });
+
+		// Проверяем, есть ли активные радиобаттоны внутри активного шага
+		var $checkedRadio = $activeStep.find('.radio input[type="radio"]:checked');
+		if ($checkedRadio.length === 0 && $activeStep.find('.radio input[type="radio"]').length > 0) {
+			console.log("Выберите вариант ответа");
+			
+			if ($(this).hasClass('btn-next')) {
+				// Блокируем переход, если радиобаттон не выбран
+				$activeStep.addClass("error");
+				return;
+			}
+		} else {
+			// Если радиобаттон выбран, выводим его значение в консоль
+			console.log("Выбран радиобаттон с значением: " + $checkedRadio.val());
+		}
+
+        // Проверяем, есть ли активные текстовые поля внутри активного шага
+        var $prevTextFields = $activeStep.find('.quiz__label input[type="text"]').filter(function() {
+            return $(this).val().trim() !== "";
+        });
+
+        if ($prevTextFields.length === 0 && $activeStep.find('.quiz__label').length > 0) {
+            console.log("Введите текст");
+            if ($(this).hasClass('btn-next')) {
+				$activeStep.addClass("error");
+				return; // Блокируем переход, если радиобаттон не выбран
+			}
+        }
+
+        // Проверяем, есть ли активные чекбоксы внутри активного шага
+        var $prevCheckboxes = $activeStep.find('.checkbox input[type="checkbox"]:checked');
+        if ($prevCheckboxes.length === 0 && $activeStep.find('.checkbox').length > 0) {
+            console.log("Выберите вариант ответа");
+            if ($(this).hasClass('btn-next')) {
+				$activeStep.addClass("error");
+				return; // Блокируем переход, если радиобаттон не выбран
+			}
+        }
+
+        // Удаляем класс "active" с предыдущего активного шага
+        $activeStep.removeClass('active');
+
+        // Находим следующий активный шаг и добавляем ему класс "active"
+        var $nextStep = $('.quiz__step[data-step="' + step + '"]');
+        $nextStep.addClass("active");
+
+        // Очищаем консоль
+        console.clear();
+
         // Устанавливаем ширину span до значения step
         var spanWidth = step * 10; // Пример: умножаем на 10 для получения ширины в 10 пикселях на шаг
         $(".quizStepCount").css("width", spanWidth + "%");
+
+        // Проверяем, имеет ли кнопка класс btn-next
+        if ($(this).hasClass('btn-next')) {
+            console.log("Это кнопка 'Next'");
+            // Блокируем переход только для кнопок с классом btn-next
+            return;
+        }
+
+        // Продолжаем переход для кнопок с классом btn-item_border, если есть атрибут data-href
+        var href;
+        if (selectedGender === "Male") {
+            href = "product-man.html";
+        } else if (selectedGender === "Female") {
+            href = "product.html";
+        }
+
+        if (href) {
+            window.location.href = href;
+        }
     });
 }
+
 
 
 /*Focus*/

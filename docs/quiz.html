@@ -71,18 +71,19 @@
 										</div>
 										<div class="quiz__step-body">
 											<label class="radio">
-												<input type="radio" name="gender" value="active" checked>
+												<input type="radio" name="gender" value="Male">
 												<div class="radio__icon"></div>
 												<div class="radio__caption">Male</div>
 											</label>
 											<label class="radio">
-												<input type="radio" name="gender" value="active">
+												<input type="radio" name="gender" value="Female">
 												<div class="radio__icon"></div>
 												<div class="radio__caption">Female</div>
 											</label>
+											<div class="quiz__error">Required to select a value</div>
 										</div>
 										<div class="quiz__bottom">
-											<button class="quiz__btn step--js btn-item" data-next-step="2">
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="2">
 												<span>next</span>
 											</button>
 										</div>
@@ -101,6 +102,7 @@
 													<div class="quiz__label-caption">Type your age</div>
 													<input type="text" class="quiz__field field" placeholder="">
 												</label>
+												<div class="quiz__error">Field required</div>
 											</div>
 										</div>
 										<div class="quiz__bottom">
@@ -108,7 +110,7 @@
 												data-next-step="1">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="3">
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="3">
 												<span>next</span>
 											</button>
 										</div>
@@ -123,7 +125,7 @@
 										</div>
 										<div class="quiz__step-body">
 											<label class="radio">
-												<input type="radio" name="loss" value="active" checked>
+												<input type="radio" name="loss" value="active">
 												<div class="radio__icon"></div>
 												<div class="radio__caption">Yes</div>
 											</label>
@@ -132,13 +134,14 @@
 												<div class="radio__icon"></div>
 												<div class="radio__caption">No</div>
 											</label>
+											<div class="quiz__error">Required to select a value</div>
 										</div>
 										<div class="quiz__bottom">
 											<button class="quiz__btn step--js btn-item btn-item_border"
 												data-next-step="2">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="4">
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="4">
 												<span>next</span>
 											</button>
 										</div>
@@ -153,7 +156,7 @@
 										</div>
 										<div class="quiz__step-body">
 											<label class="radio">
-												<input type="radio" name="hair" value="active" checked>
+												<input type="radio" name="hair" value="active">
 												<div class="radio__icon"></div>
 												<div class="radio__caption">Just let it dry</div>
 											</label>
@@ -172,13 +175,14 @@
 												<div class="radio__icon"></div>
 												<div class="radio__caption">Often change my hairstyle</div>
 											</label>
+											<div class="quiz__error">Required to select a value</div>
 										</div>
 										<div class="quiz__bottom">
 											<button class="quiz__btn step--js btn-item btn-item_border"
 												data-next-step="3">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="5">
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="5">
 												<span>next</span>
 											</button>
 										</div>
@@ -193,7 +197,7 @@
 										</div>
 										<div class="quiz__step-body">
 											<label class="radio">
-												<input type="radio" name="EAT" value="active" checked>
+												<input type="radio" name="EAT" value="active">
 												<div class="radio__icon"></div>
 												<div class="radio__caption">Healthy stuff mostly: like fruits, veggies,
 													and
@@ -216,13 +220,14 @@
 												<div class="radio__icon"></div>
 												<div class="radio__caption">A bit of everything, no set pattern</div>
 											</label>
+											<div class="quiz__error">Required to select a value</div>
 										</div>
 										<div class="quiz__bottom">
 											<button class="quiz__btn step--js btn-item btn-item_border"
 												data-next-step="4">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="6">
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="6">
 												<span>next</span>
 											</button>
 										</div>
@@ -238,7 +243,7 @@
 										</div>
 										<div class="quiz__step-body">
 											<label class="radio">
-												<input type="radio" name="stressed" value="active" checked>
+												<input type="radio" name="stressed" value="active">
 												<div class="radio__icon"></div>
 												<div class="radio__caption">Not really</div>
 											</label>
@@ -257,13 +262,14 @@
 												<div class="radio__icon"></div>
 												<div class="radio__caption">All the time</div>
 											</label>
+											<div class="quiz__error">Required to select a value</div>
 										</div>
 										<div class="quiz__bottom">
 											<button class="quiz__btn step--js btn-item btn-item_border"
 												data-next-step="5">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="7">
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="7">
 												<span>next</span>
 											</button>
 										</div>
@@ -279,7 +285,7 @@
 										</div>
 										<div class="quiz__step-body">
 											<label class="radio">
-												<input type="radio" name="straighteners" value="active" checked>
+												<input type="radio" name="straighteners" value="active">
 												<div class="radio__icon"></div>
 												<div class="radio__caption">Never</div>
 											</label>
@@ -298,13 +304,14 @@
 												<div class="radio__icon"></div>
 												<div class="radio__caption">Often</div>
 											</label>
+											<div class="quiz__error">Required to select a value</div>
 										</div>
 										<div class="quiz__bottom">
 											<button class="quiz__btn step--js btn-item btn-item_border"
 												data-next-step="6">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="8">
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="8">
 												<span>next</span>
 											</button>
 										</div>
@@ -399,13 +406,14 @@
 												</div>
 												<div class="checkbox__caption">No problems</div>
 											</label>
+											<div class="quiz__error">Required to select a value</div>
 										</div>
 										<div class="quiz__bottom">
 											<button class="quiz__btn step--js btn-item btn-item_border"
 												data-next-step="7">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="9">
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="9">
 												<span>next</span>
 											</button>
 										</div>
@@ -504,13 +512,14 @@
 													issues
 												</div>
 											</label>
+											<div class="quiz__error">Required to select a value</div>
 										</div>
 										<div class="quiz__bottom">
 											<button class="quiz__btn step--js btn-item btn-item_border"
 												data-next-step="8">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="10">
+											<button class="quiz__btn step--js btn-item btn-next" data-next-step="10">
 												<span>next</span>
 											</button>
 										</div>
@@ -591,13 +600,14 @@
 												</div>
 												<div class="checkbox__caption">Faster growth of new hair</div>
 											</label>
+											<div class="quiz__error">Required to select a value</div>
 										</div>
 										<div class="quiz__bottom">
 											<button class="quiz__btn step--js btn-item btn-item_border"
 												data-next-step="9">
 												<span>back</span>
 											</button>
-											<button class="quiz__btn step--js btn-item" data-next-step="11">
+											<button class="quiz__btn step--js btn-item btn-next loader--js">
 												<span>Fınısh quız</span>
 											</button>
 										</div>
@@ -715,7 +725,7 @@
 							<input type="text" class="form__field field" placeholder="Type your Email">
 						</div>
 						<div class="form__bottom">
-							<button class="form__btn btn thank--js">
+							<button class="form__btn btn final--js">
 								<span>Continue</span>
 							</button>
 						</div>
@@ -790,18 +800,18 @@
 					<div class="form__wrap">
 						<div class="form__box">
 							<div class="form__caption">Card Number*</div>
-							<input type="text" class="form__field field" placeholder="0000 0000 0000 0000">
+							<input type="text" class="form__field field card-mask" placeholder="0000 0000 0000 0000">
 						</div>
 						<div class="form__box">
 							<div class="form__caption">Expiry date*</div>
-							<input type="text" class="form__field field" placeholder="_ _ / _ _">
+							<input type="text" class="form__field field date-mask" placeholder="_ _ / _ _">
 						</div>
 						<div class="form__box">
 							<div class="form__caption">CVV/CVC*</div>
-							<input type="text" class="form__field field" placeholder="0000">
+							<input type="text" class="form__field field digits-mask" placeholder="0000">
 							<div class="form__box-desc">3/4 digits on the back of your card</div>
 						</div>
-						<button class="form__btn btn">
+						<button class="form__btn btn thank--js">
 							<span>order now</span>
 						</button>
 					</div>
@@ -977,6 +987,22 @@
 		</div>
 	</div>
 </div><!-- end thank-modal -->
+
+<div id="modal-loader" class="modal-loader modal" style="display: none;">
+	<div class="modal-loader__body">
+		<div class="modal-loader__wrap">
+			<div class="modal-loader__title">We're processing your answers, please wait...</div>
+			<div class="modal-loader__box">
+				<div class="modal-loader__block">
+					<div class="modal-loader__line">
+						<span></span>
+					</div>
+					<div class="modal-loader__caption">loading...</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- end modal-loader -->
 
 <footer class="footer">
 	<div class="wrapper">
