@@ -26,6 +26,16 @@
 			line-height: 140%;
 			margin-top: 7px;
 		}
+		&.error {
+			.form {
+				&__caption {
+					color: #ea2654;
+				}
+				&__field {
+					border-color: #ea2654;
+				}
+			}
+		}
 	}
 	&__caption {
 		color: #191919;
@@ -33,6 +43,10 @@
 		font-weight: 400;
 		line-height: 140%;
 		margin-bottom: 6px;
+		transition: color 0.3s;
+	}
+	&__field {
+		border: 1px solid #d7d3d0;
 	}
 	&__bottom {
 		display: flex;

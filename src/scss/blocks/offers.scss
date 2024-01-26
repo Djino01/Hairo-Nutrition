@@ -23,12 +23,8 @@
 		&_white {
 			background-color: #a1203e;
 			.offers {
-				&__btn {
-					background: #f4eeee;
-					color: #a1203e;
-					&:hover {
-						color: #fff;
-					}
+				&__info {
+					background-color: #db2550;
 				}
 			}
 		}

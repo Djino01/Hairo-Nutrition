@@ -46,7 +46,7 @@ $('.order--js').on('click', function (event) {
 	});
 });
 
-$('.final--js').on('click', function (event) {
+/*$('.final--js').on('click', function (event) {
 	event.preventDefault();
 	$.fancybox.close();
 	$.fancybox.open({
@@ -55,7 +55,7 @@ $('.final--js').on('click', function (event) {
 		baseClass: 'dark-fancybox',
 		touch: false,
 	});
-});
+});*/
 
 $('.thank--js').on('click', function (event) {
 	event.preventDefault();

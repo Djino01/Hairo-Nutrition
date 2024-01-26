@@ -49,6 +49,32 @@
 		border-top: transparent;
 		white-space: nowrap;
 		z-index: 10;
+		&__scroll {
+			max-height: 250px;
+			&.dragscroll {
+				&::-webkit-scrollbar {
+					width: 3px;
+					height: auto;
+					background-color: #6e7687;
+					opacity: 1;
+					border-radius: 4px;
+					transition: all 0.3s;
+					display: block;
+				}
+				&::-webkit-scrollbar-thumb {
+					background-color: rgba(255, 255, 255, 0.4);
+					border-radius: 4px;
+					transition: all 0.3s;
+					display: block;
+				}
+				&::-webkit-scrollbar-button:horizontal:start:decrement {
+					display: block;
+				}
+				&::-webkit-scrollbar-button:horizontal:end:increment {
+					display: block;
+				}
+			}
+		}
 		&__value {
 			padding: 5px 14px;
 			color: #191919;

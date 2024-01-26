@@ -59,6 +59,7 @@
 	position: relative;
 	z-index: 10;
 	overflow: hidden;
+	animation: animate-pulse 3s linear infinite;
 	transition: all 0.3s;
 	&::before {
 		content: "";
@@ -76,11 +77,63 @@
 	span {
 		max-width: 100px;
 	}
+	&_white {
+		background: #f4eeee;
+		color: #a1203e;
+		animation-name: animate-pulse-white;
+		&::before {
+			background-color: #e5e5e5;
+		}
+	}
 	&:hover {
 		&::before {
 			opacity: 1;
 			transition: opacity 0.3s;
 		}
+	}
+}
+@keyframes animate-pulse {
+	0% {
+		box-shadow:
+			0 0 0 0 rgba(161, 33, 63, 0.7),
+			0 0 0 0 rgba(161, 33, 63, 0.7);
+	}
+	40% {
+		box-shadow:
+			0 0 0 50px transparent,
+			0 0 0 0 rgba(161, 33, 63, 0.7);
+	}
+	80% {
+		box-shadow:
+			0 0 0 50px transparent,
+			0 0 0 30px transparent;
+	}
+	100% {
+		box-shadow:
+			0 0 0 0 transparent,
+			0 0 0 30px transparent;
+	}
+}
+@keyframes animate-pulse-white {
+	0% {
+		box-shadow:
+			0 0 0 0 rgba(255, 255, 255, 0.7),
+			0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+	40% {
+		box-shadow:
+			0 0 0 50px transparent,
+			0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+	80% {
+		box-shadow:
+			0 0 0 50px transparent,
+			0 0 0 30px transparent;
+	}
+	100% {
+		box-shadow:
+			0 0 0 0 transparent,
+			0 0 0 30px transparent;
 	}
 }
 
@@ -494,6 +547,51 @@
 			width: 38px;
 			height: 39px;
 			font-size: 10.513px;
+		}
+	}
+
+	@keyframes animate-pulse {
+		0% {
+			box-shadow:
+				0 0 0 0 rgba(161, 33, 63, 0.7),
+				0 0 0 0 rgba(161, 33, 63, 0.7);
+		}
+		40% {
+			box-shadow:
+				0 0 0 30px transparent,
+				0 0 0 0 rgba(161, 33, 63, 0.7);
+		}
+		80% {
+			box-shadow:
+				0 0 0 30px transparent,
+				0 0 0 15px transparent;
+		}
+		100% {
+			box-shadow:
+				0 0 0 0 transparent,
+				0 0 0 15px transparent;
+		}
+	}
+	@keyframes animate-pulse-white {
+		0% {
+			box-shadow:
+				0 0 0 0 rgba(255, 255, 255, 0.7),
+				0 0 0 0 rgba(255, 255, 255, 0.7);
+		}
+		40% {
+			box-shadow:
+				0 0 0 30px transparent,
+				0 0 0 0 rgba(255, 255, 255, 0.7);
+		}
+		80% {
+			box-shadow:
+				0 0 0 30px transparent,
+				0 0 0 15px transparent;
+		}
+		100% {
+			box-shadow:
+				0 0 0 0 transparent,
+				0 0 0 15px transparent;
 		}
 	}
 }
