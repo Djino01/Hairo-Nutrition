@@ -1,5 +1,9 @@
 // $('.phone-mask').mask('+7 (999)999-99-99');
 
+$('.card-mask').mask("9999 9999 9999 9999",{autoclear: false});
+$('.date-mask').mask("99/99",{autoclear: false});
+$('.code-mask').mask("9999",{autoclear: false});
+
 $('.loader--js').on('click', function (event) {
     event.preventDefault();
 
@@ -45,18 +49,6 @@ $('.order--js').on('click', function (event) {
 		touch: false,
 	});
 });
-
-/*$('.final--js').on('click', function (event) {
-	event.preventDefault();
-	$.fancybox.close();
-	$.fancybox.open({
-		loop: false,
-		src: '#final-modal',
-		baseClass: 'dark-fancybox',
-		touch: false,
-	});
-});*/
-
 $('.thank--js').on('click', function (event) {
 	event.preventDefault();
 	$.fancybox.close();
