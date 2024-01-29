@@ -2,7 +2,7 @@ if ($(".offers").length > 0) {
 document.addEventListener('DOMContentLoaded', function () {
 	// конечная дата
 	//const deadline = new Date(new Date().getFullYear(), new Date().getMonth() + 1, 1);
-	const deadline = new Date(2024, 0, 29);
+	const deadline = new Date(2024, 0, 31);
 	// id таймера
 	let timerId = null;
 	// склонение числительных

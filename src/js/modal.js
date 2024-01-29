@@ -49,7 +49,7 @@ $('.order--js').on('click', function (event) {
 		touch: false,
 	});
 });
-$('.thank--js').on('click', function (event) {
+/*$('.thank--js').on('click', function (event) {
 	event.preventDefault();
 	$.fancybox.close();
 	$.fancybox.open({
@@ -58,4 +58,4 @@ $('.thank--js').on('click', function (event) {
 		baseClass: 'dark-fancybox',
 		touch: false,
 	});
-});
+});*/

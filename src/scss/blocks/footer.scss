@@ -69,6 +69,31 @@
 			object-fit: contain;
 		}
 	}
+	&--white {
+		background-color: #f4eeee;
+		color: #191919;
+		font-weight: 600;
+		.logo {
+			background-image: url(../img/modal/logo-dark.svg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 64px;
+			img {
+				opacity: 0;
+			}
+		}
+		.footer {
+			&__nav {
+				ul {
+					li {
+						a {
+							color: #191919;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 @media (max-width: 1290px) {
 }
@@ -135,6 +160,11 @@
 		.logo {
 			width: 93px;
 			margin-top: -1px;
+		}
+		&--white {
+			.logo {
+				height: 43px;
+			}
 		}
 	}
 }
