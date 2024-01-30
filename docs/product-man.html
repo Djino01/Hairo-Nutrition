@@ -33,7 +33,7 @@
 
 <main class="main">
 
-	<section class="product-promo">
+	<section class="product-promo product-promo_man">
 		<div class="wrapper">
 			<div class="product-promo__top">
 				<h1 class="product-promo__title title title_big">Congratulations!</h1>
@@ -137,7 +137,7 @@
 				<div class="product-informations__img">
 					<picture>
 						<source srcset="img/product/informations/img-2-man.png" media="(min-width: 1291px)" />
-						<source srcset="img/product/informations/img-2-man-table.jpg" media="(min-width: 761px)" />
+						<source srcset="img/product/informations/img-2-man-table.png" media="(min-width: 761px)" />
 						<source srcset="img/product/informations/img-2-man-mobile.jpg" media="(max-width: 760px)" />
 						<img src="img/product/informations/img-2-man-mobile.jpg" alt="" />
 					</picture>
@@ -256,7 +256,7 @@
 		</div>
 	</section>
 
-	<section class="offers">
+	<section class="offers offers_man">
 		<div class="wrapper">
 			<div class="offers__top">
 				<h2 class="offers__title title title_small">Time Left for This Offer:</h2>
@@ -311,7 +311,10 @@
 				<div class="offers__card offers__card_white">
 					<div class="offers__card-wrap">
 						<div class="offers__img">
-							<img src="img/product/offers/img-2.png" alt="">
+							<picture>
+								<source srcset="img/product/offers/img-2.png" media="(min-width: 760px)" />
+								<img src="img/product/offers/img-2-mobile.png" alt="" />
+							</picture>
 						</div>
 						<div class="offers__caption">
 							<p>Buy 3 get 2 free</p>
@@ -496,7 +499,7 @@
 						</div>
 						<div class="form__box">
 							<div class="form__caption">Phone*</div>
-							<input id="phone" type="text" class="form__field field" placeholder="Type your Phone">
+							<input id="phone" type="number" class="form__field field" placeholder="Type your Phone">
 						</div>
 						<div class="form__box">
 							<div class="form__caption">Email*</div>
@@ -571,8 +574,9 @@
 					</div>
 				</div>
 				<div class="final-modal__desc">
-					<p>Enjoy your expedited delivery to [Address*]</p>
-					<p>If you order in the next 1 hour and 56 minutes, your order is scheduled to arrive by [Date]</p>
+					<p>Enjoy your expedited delivery to [<span id="new-address">Address*</span>]</p>
+					<p>If you order in the next 1 hour and 56 minutes, your order is scheduled to arrive by [<span
+							id="new-data">Date</span>]</p>
 				</div>
 				<form action="#" class="form">
 					<div class="form__wrap">

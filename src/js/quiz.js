@@ -32,9 +32,9 @@ if ($(".step--js").length > 0) {
 		}
 
         // Проверяем, есть ли активные текстовые поля внутри активного шага
-        var $prevTextFields = $activeStep.find('.quiz__label input[type="text"]').filter(function() {
-            return $(this).val().trim() !== "";
-        });
+        var $prevTextFields = $activeStep.find('.quiz__label input[type="number"]').filter(function() {
+			return $(this).val() !== null && $(this).val() !== undefined && $(this).val().trim() !== "";
+		});
 
         if ($prevTextFields.length === 0 && $activeStep.find('.quiz__label').length > 0) {
             console.log("Введите текст");

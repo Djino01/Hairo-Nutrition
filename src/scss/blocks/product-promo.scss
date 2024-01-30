@@ -52,6 +52,26 @@
 			bottom: 0px;
 			z-index: -1;
 		}
+		&_man {
+			.product-promo {
+				&__wrap {
+					max-width: 400px;
+				}
+				&__items {
+					.item {
+						&:nth-child(5),
+						&:nth-child(6) {
+							max-width: 340px;
+						}
+					}
+				}
+				&__img {
+					width: 650px;
+					right: calc(50% - 611px);
+					bottom: -23px;
+				}
+			}
+		}
 	}
 }
 @media (max-width: 760px) {
@@ -78,6 +98,17 @@
 			bottom: 0;
 			z-index: -1;
 			position: relative;
+		}
+		&_man {
+			margin-bottom: -1px;
+			.product-promo {
+				&__img {
+					width: 93%;
+					right: -6px;
+					bottom: 0;
+					margin: 10px auto 0;
+				}
+			}
 		}
 	}
 }

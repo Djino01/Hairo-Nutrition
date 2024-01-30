@@ -130,11 +130,13 @@
 			margin-right: -20px;
 		}
 		&__swiper {
-			width: 241px;
+			//width: 241px;
+			width: 65%;
 		}
 		&__slide {
-			width: 241px;
-			height: 173px;
+			//height: 173px;
+			width: 65%;
+			height: auto;
 			&.swiper-slide-prev {
 				right: -30px;
 			}

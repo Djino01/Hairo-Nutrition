@@ -154,6 +154,14 @@
 			width: calc(33.333% - 7px);
 			border-radius: 20px;
 			padding: 73px 25px 12px;
+			&_white {
+				.offers {
+					&__img {
+						margin-left: 0px;
+						width: calc(100% + 30px);
+					}
+				}
+			}
 		}
 		&__img {
 			top: -75px;
@@ -192,6 +200,13 @@
 			font-size: 16px;
 			margin-top: 17px;
 		}
+		&_man {
+			.offers {
+				&__top {
+					margin-bottom: 165px;
+				}
+			}
+		}
 	}
 	.offers-timer {
 		&__caption {
@@ -203,6 +218,7 @@
 @media (max-width: 760px) {
 	.offers {
 		padding-top: 70px;
+		overflow: hidden;
 		&__top {
 			margin-bottom: 191px;
 		}
@@ -219,6 +235,14 @@
 			&-wrap {
 				max-width: 300px;
 				margin: 0 auto;
+			}
+			&_white {
+				.offers {
+					&__img {
+						margin-right: -16px;
+						width: calc(100% + 42px);
+					}
+				}
 			}
 		}
 		&__img {
@@ -260,6 +284,13 @@
 		&__price {
 			font-size: 24px;
 			margin-top: 28px;
+		}
+		&_man {
+			.offers {
+				&__top {
+					margin-bottom: 190px;
+				}
+			}
 		}
 	}
 	.offers-timer {

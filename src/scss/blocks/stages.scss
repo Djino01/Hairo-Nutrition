@@ -158,7 +158,8 @@
 				margin-bottom: -44px;
 				.stages {
 					&__number {
-						top: -32px;
+						//top: -32px;
+						top: -65px;
 					}
 					&__top {
 						margin-bottom: 15px;
@@ -168,7 +169,8 @@
 		}
 		&__number {
 			font-size: 100px;
-			top: -33px;
+			//top: -33px;
+			top: -65px;
 			left: 0px;
 		}
 		&__top {
@@ -195,7 +197,7 @@
 			margin-left: -20px;
 			margin-right: -20px;
 			&_man {
-				width: 248px;
+				width: 238px;
 				margin-left: auto;
 				margin-top: 45px;
 			}
