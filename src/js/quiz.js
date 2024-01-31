@@ -32,7 +32,7 @@ if ($(".step--js").length > 0) {
 		}
 
         // Проверяем, есть ли активные текстовые поля внутри активного шага
-        var $prevTextFields = $activeStep.find('.quiz__label input[type="number"]').filter(function() {
+        var $prevTextFields = $activeStep.find('.quiz__label input[type="tel"]').filter(function() {
 			return $(this).val() !== null && $(this).val() !== undefined && $(this).val().trim() !== "";
 		});
 

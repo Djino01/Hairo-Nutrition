@@ -306,7 +306,8 @@
 						</div>
 						<div class="form__box">
 							<div class="form__caption">Phone*</div>
-							<input id="phone" type="number" class="form__field field" placeholder="Type your Phone">
+							<input id="phone" type="tel" inputmode="numeric" pattern="[0-9]*" class="form__field field"
+								placeholder="Type your Phone">
 						</div>
 						<div class="form__box">
 							<div class="form__caption">Email*</div>
@@ -381,9 +382,9 @@
 					</div>
 				</div>
 				<div class="final-modal__desc">
-					<p>Enjoy your expedited delivery to [<span id="new-address">Address*</span>]</p>
-					<p>If you order in the next 1 hour and 56 minutes, your order is scheduled to arrive by [<span
-							id="new-data">Date</span>]</p>
+					<p>Enjoy your expedited delivery to <span id="new-address">Address*</span></p>
+					<p>If you order in the next 1 hour and 56 minutes, your order is scheduled to arrive by<br> <span
+							id="new-data">Date</span></p>
 				</div>
 				<form action="#" class="form">
 					<div class="form__wrap">
