@@ -27,11 +27,7 @@ $('.loader--js').on('click', function (event) {
             $.fancybox.close();
 
             // Проверяем значение selectedGenderInModal и выполняем переход на соответствующую страницу
-            if (selectedGenderInModal === 'Female') {
-                window.location.href = 'product.html';
-            } else if (selectedGenderInModal === 'Male') {
-                window.location.href = 'product-man.html';
-            }
+            window.location.href = 'product.html';
         }, 1500);
     } else {
         console.log("Выберите хотя бы один вариант ответа");

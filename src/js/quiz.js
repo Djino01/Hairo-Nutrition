@@ -75,12 +75,11 @@ if ($(".step--js").length > 0) {
             return;
         }
 
-        // Продолжаем переход для кнопок с классом btn-item_border, если есть атрибут data-href
-        var href;
-        if (selectedGender === "Male") {
-            href = "product-man.html";
-        } else if (selectedGender === "Female") {
-            href = "product.html";
+        var href = "product.html";
+
+        if ($(this).hasClass('btn-item_border')) {
+            // Дополнительные условия, если необходимо
+            // В данном случае нет необходимости проверять selectedGender, так как значение href одинаково для всех случаев
         }
 
         if (href) {
